@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// routes yang belum di mapping dengan controller
+Route::get('/hallo', function () {
+   	echo "Hallo";
+});
