@@ -19,3 +19,11 @@ Route::get('/', function () {
 Route::get('/hallo', function () {
    	echo "Hallo";
 });
+
+
+// routes di mapping dengan controller
+Route::get('home', 'HomeController@hello');
+
+// parsing parameter 
+
+Route::get('home/{nama}', 'HomeController@cetakNama');
